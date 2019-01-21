@@ -1,0 +1,197 @@
+/*/ GOBAL STYLES /*/
+
+body{
+  font-size: 18px;
+  overflow-x: hidden;
+  background: hsl(214, 64%, 98%);
+  position: relative;
+}
+
+/*-------------- Background Art-------------*/
+
+body::before{
+  content: '';
+  position: absolute;
+  width: 80vw;
+  height: 80vw;
+  border-radius: 15%;
+  margin: -40% 40%;
+  transform: rotate(45deg);
+  z-index: -1;
+  background: rgb(255,82,191);
+  background: -webkit-linear-gradient(left, rgba(255,82,191,1) 0%, rgba(154,82,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,82,191,1) 0%, rgba(154,82,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,82,191,1) 0%, rgba(154,82,255,1) 100%);
+}
+
+body::after{
+  content: '';
+  position: absolute;
+  background: white;
+  top: 10%;
+  width: 80vw;
+  height: 120vw;
+  border-radius: 20%;
+  left: -20%;
+  margin: -40% 40%;
+  transform: rotate(245deg);
+  z-index: -2;
+}
+
+/*------------------------------------------*/
+
+
+*{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(208, 11%, 55%);
+}
+
+a, li{
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, th{
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  color: hsl(192, 100%, 9%);
+}
+
+button{
+  border: none;
+  border-radius: 2.5px;
+  background-color: hsl(322, 100%, 66%);
+  padding: 20px 60px;
+  color: #fff;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  text-transform: capitalize;
+}
+
+
+
+input{
+  border: none;
+  border-radius: 2.5px;
+  background-color: #fff;
+  padding: 20px;
+  width: fill-available;
+  width: -moz-available;     /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  float: right;
+}
+
+.main_img{
+  min-width: 300px;
+  max-width: 400px;
+  width: 60%;
+}
+
+#full_pg_wrap{
+  padding: 50px;
+}
+
+/*/ Custom STYLES /*/
+
+/* ---------------- Top Section ---------------------*/
+#top_section{
+height: fit-content;
+}
+
+.logo img{width: 200px;}
+
+
+/* Top Header */
+.logo{
+  float: left;
+}
+.join_btn_nav{
+  float: right;
+  background-color: #fff;
+  box-shadow:0 0 20px rgba(0, 0, 0, 0.15);
+  color: hsl(265, 100%, 66%);
+  margin-top: -10px;
+}
+
+/* Banner (/ Middle/Main Header) */
+.banner{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-top: 100px;
+}
+
+/* --------------- Middle Section -------------------*/
+#middle_section{
+  margin-top: 500px;
+}
+
+.middle_wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.middle_wrap .main_img{
+  margin: auto;
+}
+
+/* --------------- Bottom SectionW -------------------*/
+#bottom_section{
+  margin-top: 200px;
+}
+
+.join_box{
+  max-width: 400px;
+  width: 40%;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 50px 80px;
+  box-shadow:0 0 40px rgba(0, 0, 0, 0.15);
+}
+.join_box h2{
+  text-transform: capitalize;
+}
+
+
+
+#footer{
+  background: hsl(192, 100%, 9%);
+  font-size: 0.8em;
+  margin-top: 200px;
+}
+
+#footer h2, h3, h4{
+  color: #fff;
+  text-transform: uppercase;
+}
+#footer button{
+  float: right;
+  margin-top: 20px;
+}
+
+#footer li{
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.small_img{
+  width: 32px;
+}
+
+.footer_wrap{
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-gap: 20px;
+}
+
+
+
+/*-----------------------------------------*/
+/*-------------Mobible Version-------------*/
+/*-----------------------------------------*/
