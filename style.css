@@ -15,7 +15,7 @@ body::before{
   width: 80vw;
   height: 80vw;
   border-radius: 15%;
-  margin: -40% 40%;
+  margin: -40% 55%;
   transform: rotate(45deg);
   z-index: -1;
   background: rgb(255,82,191);
@@ -53,6 +53,7 @@ a, li{
   list-style-type: none;
 }
 
+
 h1, h2, h3, h4, h5, h6, th{
   font-family: 'Poppins', 'Open Sans', sans-serif;
   color: hsl(192, 100%, 9%);
@@ -84,8 +85,7 @@ input{
 
 .main_img{
   min-width: 300px;
-  max-width: 400px;
-  width: 60%;
+  width: 100%;
 }
 
 #full_pg_wrap{
@@ -180,8 +180,12 @@ height: fit-content;
   text-transform: uppercase;
 }
 
+#footer a{
+  padding: 8px;
+}
+
 .small_img{
-  width: 32px;
+  width: 3.2vw;
 }
 
 .footer_wrap{
@@ -190,8 +194,106 @@ height: fit-content;
   grid-gap: 20px;
 }
 
+.footer_logo img{
+  width: 200px;
+}
+
 
 
 /*-----------------------------------------*/
 /*-------------Mobible Version-------------*/
 /*-----------------------------------------*/
+@media only screen and (max-width: 650px) {
+  body{
+    font-size: 0.9em;
+  }
+  body:after{
+    margin: -20% 40%;
+  }
+
+  button{
+    font-size: 0.9em;
+    padding: 10px 30px;
+  }
+
+  .join_btn_nav{
+    margin-top: -5px;
+  }
+
+  #full_pg_wrap{
+    padding: 30px 20px 20px 20px;
+  }
+
+  .logo img{
+    width: 150px;
+  }
+
+  /*---Top Section---*/
+
+  .banner{
+    width: 90%;
+  }
+
+  /*---Middle Section---*/
+
+#middle_section{
+  margin-top: 150px;
+}
+
+  .middle_wrap{
+    display: block;
+    text-align: center;
+  }
+
+  .middle_wrap img{
+    padding-bottom: 40px;
+  }
+
+  th{
+    font-size: 1.3em;
+    padding: 40px 0 20px 0 ;
+  }
+
+  /*---Bottom Section---*/
+  #bottom_section{
+    margin-top: 125px;
+  }
+
+  .join_box{
+    padding: 50px 20px;
+    width: 80%;
+  }
+
+
+  #footer{
+    margin-top: 100px;
+  }
+
+  #footer #full_pg_wrap{
+    padding: 50px 20px 20px 20px;
+  }
+
+  #footer li{
+    padding-bottom: 20px;
+  }
+
+  .footer_wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+  }
+
+  .footer_logo{
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .footer_logo img{
+    width: 150px;
+  }
+
+  .col1{ grid-row: 4; text-align: center;}
+  .col2{ grid-row: 1;}
+  .col3{ grid-row: 2;}
+  .col4{ grid-row: 3; text-align: center; padding-bottom: 40px;}
+
+}
