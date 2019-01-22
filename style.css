@@ -1,5 +1,8 @@
 /*/ GOBAL STYLES /*/
 
+html{
+  overflow-x: hidden;
+}
 body{
   font-size: 18px;
   overflow-x: hidden;
@@ -164,6 +167,7 @@ height: fit-content;
   background: hsl(192, 100%, 9%);
   font-size: 0.8em;
   margin-top: 200px;
+  width: 100%;
 }
 
 #footer h2, h3, h4{
@@ -196,6 +200,10 @@ height: fit-content;
 
 .footer_logo img{
   width: 200px;
+}
+
+.footer_logo{
+  padding-bottom: 25px;
 }
 
 
